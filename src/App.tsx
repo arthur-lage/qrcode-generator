@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 
+import toast, { Toaster } from 'react-hot-toast'
+
 import "./styles/App.css";
 
 import Code from "./components/Code";
@@ -9,10 +11,16 @@ function App() {
   const [inputText, setInputText] = useState("");
   const [qrCode, setQRCode] = useState("");
 
-  const url = "http://localhost:3001/gen";
+  const url = "https://qrcode-generator-server.vercel.app/api/gen";
 
   const genQRCode = async () => {
     if (inputText.length === 0) {
+      toast.error("You need at least 1 character!", {
+        style: {
+          fontSize: "1.6rem",
+          fontFamily: "Poppins, sans-serif"
+        }
+      })
       return;
     }
 
@@ -24,14 +32,26 @@ function App() {
       .post(url, params)
       .then((res) => {
         setQRCode(res.data);
+        toast.success("QR Code successfully generated!", {
+          style: {
+            fontSize: "1.6rem",
+            fontFamily: "Poppins, sans-serif"
+          }
+        })
       })
       .catch((e) => {
-        e && alert("deu erro");
+        e && toast.error("Couldn't generate QR Code", {
+          style: {
+            fontSize: "1.6rem",
+            fontFamily: "Poppins, sans-serif"
+          }
+        })
       });
   };
 
   return (
     <div className="App">
+      <Toaster />
       <main>
         <div className="title">
           <h1>QR Code Generator</h1>

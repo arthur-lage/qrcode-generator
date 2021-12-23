@@ -7,7 +7,7 @@ function Code({ qrCode }) {
         <img src={qrCode} alt={"QR Code"} />
         <div className="buttons">
             <a href={qrCode} download="qrcode">Download</a>
-            <a href={qrCode} download="qrcode">Share</a>
+            <a href="#">Share</a>
         </div>
     </div>
   )
