@@ -14,17 +14,15 @@ A completely responsive website where you can create a QR Code for texts and lin
 # Desktop Screenshots
 
 <div>
-    <img src="./src/assets/Screenshot_1.png" />
-    <img src="./src/assets/Screenshot_2.png" />
+    <img src="./src/assets/screenshot-1.png" />
+    <img src="./src/assets/screenshot-2.png" />
 </div>
 
 # Mobile Screenshots
 
 <div>
-    <img src="./src/assets/Screenshot_3.png"/>
-    <img src="./src/assets/Screenshot_4.png" />
-    <img src="./src/assets/Screenshot_5.png" />
-    <img src="./src/assets/Screenshot_6.png" />
+    <img src="./src/assets/screenshot-3.png"/>
+    <img src="./src/assets/screenshot-4.png" />
 </div>
 
 # 👨‍💻👩‍💻 Use the app
