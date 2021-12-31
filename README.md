@@ -33,14 +33,19 @@ You can access the application by clicking on the link below:
 
 # 💻 Technologies used in this project
 
+## Client
+
 - HTML 
 - CSS
 - JavaScript
 - ReactJS
+- React Hot Toast (package from npm)
+
+## Server
+
 - NodeJS
 - Express
 - qrcode (package from npm)
-- React Hot Toast (package from npm)
 
 # ❓ How to use it
 
